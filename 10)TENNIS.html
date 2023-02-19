@@ -1,0 +1,15 @@
+<html>
+some text
+<canvas id="game canvas" width="800" height="600"></canvas>
+<script>
+var canvas;
+var canvascontext;
+window.onload=function()
+{
+canvas=document.getElementById('game canvas');
+canvascontext=canvas.getcontext('2d');
+canvascontext.fillstyle='black';
+canvascontext.fillrect(0,0,canvas.width,canvas.height);
+}
+</script>
+</html>

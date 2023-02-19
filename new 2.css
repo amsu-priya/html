@@ -1,0 +1,17 @@
+body {   /*belongs to selectors.html*/
+  background-color: lightblue;
+  background-image: url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_960_720.jpg");
+  background-repeat: repeat;
+  /*repeat-x tends to repeat image horizontally and repeat-y vertically*/ 
+  background-attachment: fixed; /*scroll can also be given here if u scroll picture will not be moved*/ 
+  background-size: cover; /*auto,cover,200px 500px here 1st value idth another height*/
+}
+/*body
+	background: lightblue url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_960_720.jpg") repeat fixed;
+both are same*/
+
+
+h1{
+  color: navy;
+  margin-left: 20px;
+}

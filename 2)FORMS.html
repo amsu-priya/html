@@ -1,0 +1,168 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.form {
+  background-color: powderblue;
+  color: solid black;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  font-size: 200%;
+}
+</style>
+</head>
+<body>
+<!--<form action="/action_page.php">-->
+<h1>HTML FORMS</h1>
+<form autocomplete="on">
+<!--autocomplete makes it complete automatically-->
+<fieldset><!--box foramtion and legend denotes the title for the box-->
+<legend>FORM TAGS</legend>
+<div class="form">
+<label for ="fname">First name:</label><br>
+      <input type ="text" id="fname" name="fname" autofocus required /><br />
+<label for ="lname">Last name:</label><br>
+      <input type ="text" id="lname"name="lname" required /><br>
+<label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"><br> 
+<label for="pwd">Password:</label><br>
+      <input type="password" id="pwd" name="pwd"><br><br>
+<label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email"><br><br>
+<label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" value="#000000"><br><br>
+<label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday" max="2003-12-31"><br><br>
+      <input type="datetime-local" id="birthday" name="birthdaytime">
+      <input type="month" id="birthday" name="bdaymonth"><br><br>
+<label for="week">Select a week:</label>
+      <input type="week" id="week" name="week"><br><br>
+<label for="appt">Select a time:</label>
+      <input type="time" id="appt" name="appt"><br><br>
+<label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile"><br><br>
+<label for="quantity">Quantity (between 0 and 10):</label>
+      <input type="number" id="quantity" name="quantity" min="0" max="10"><br><br>
+<label for="vol">Volume (between 0 and 50):</label>
+      <input type="range" id="vol" name="vol" min="0" max="50"><br><br>
+<label for="phone">Enter a phone number:</label><br><br>
+      <input type="tel" id="phone" name="phone" placeholder="1234567890" required><br><br>
+<label for="homepage">Add your homepage:</label>
+      <input type="url" id="homepage" name="homepage"><br><br>
+	  </div>
+  <!--<label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>-->
+  
+<input type="Submit" value="submit">
+<input type="reset" value="reset">
+</fieldset>
+</form>
+</body>
+</html>
+
+<div style="border:1px solid black">submitted value can be visited through website which is studied in PHP</div></br>
+<hr></hr><!--div is a border level element-->
+
+<html>
+<head>
+<style>
+footer {
+  background-color: #000777;
+  text-color: white;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+</style>
+</head>
+<body>
+<!--<h2>The select Element</h2>
+
+<p>The select element defines a drop-down list:</p>-->
+
+<form>
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input  type="submit">
+</form><br />
+<p>click your gender </p><br>
+<input type="radio" name="gender" value="male">male</br>
+<input type="radio" name="gender" value="female">female</br>
+<!--only one can be clicked-->
+<p>click the correct answer </p>
+<input type="checkbox" name="answer" value="option a">option a</br>
+<input type="checkbox" name="answer" value="option b">option b</br>
+<form>
+<!--datalist element-->
+<h2>who is this</h2>
+<input list="priya" name="priya">
+  <datalist id="priya">
+    <option value="a">
+    <option value="b">
+    <option value="c">
+    <option value="d">
+    <option value="none">
+  </datalist>
+  <input type="submit">
+<input type="button" onclick="alert('THATS ALL FOR NOW')" value="Click Me!">
+<footer>
+<p>&copy; 2020 All rights reserved</p>
+</footer>
+</form>
+</body>
+</html>
+
+<!---forms ended-->
+<!--input types-text,email,color,date,date-time local,month.week,time,file,number,range,tel,url,submit,reset,rado,checkbox,button-->
+<hr>
+
+<html>
+<body bgcolor="powderblue" text="black">
+<h1 align="center">tutor jobs</h1>
+<hr>
+<form>
+<center>
+<table cellpadding="5px" border="1px">
+<tr>
+<td>name:</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>password:</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>d.o.b</td>
+<td><select><option>1</option>
+<option>2</option></select>
+<select><option>jan</option>
+<option>feb</option></select>
+</td>
+</tr>
+<tr>
+<td>email:</td>
+<td><input type="email"></td>
+</tr>
+<td>education:</td>
+<td><select multiple>
+<option>10th</option>
+<option>12th</option>
+<option>ug</option>
+<option>pg</option></td>
+</tr>
+<tr><td colspan="2"><input type="file">filedata</td>
+</tr>
+<tr><td align="center" colspan="2"><input type="submit" value="ok"><button>clear</button></td></tr>
+</table>
+</center>
+</form>
+</body>
+</html>

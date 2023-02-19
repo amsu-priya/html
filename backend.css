@@ -1,0 +1,111 @@
+footer{
+  background-color: #9370DB;
+  text-color: white;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+*{  /*universal selector*/
+	margin:0;
+	padding:0;
+	font-family:Century Gothic;
+}
+header{  /*rgba dulls the backgroundcolor a denotes alpha*/
+	background-image:linear-gradient(rgba(100,50,700,0.3),rgba(0,0,0,0.3)),url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_960_720.jpg");
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+}
+ul{
+	float:right;/*rightsided*/
+	list-style-type:none;
+	margin-top:25px;
+}
+ul li{
+	display:inline-block;
+}
+ul li a{
+	text-decoration:none;
+	color:#fff;
+	padding:5px 20px;
+	border:1px solid transparent;
+	transition:0.6s ease;
+}
+ul li a:hover{
+	background-color:#fff;  /*fff denotes all color white*/
+	color:#000;  /*000 denotes all color black*/
+}
+ul li.active a{
+	background-color:#fff;  /*fff denotes all color white*/
+	color:#000;  /*000 denotes all color black*/
+}
+
+.main{
+	max-width:1200px;
+	margin:auto;
+}	
+.title{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+.title h1{
+color:#fff;
+font-size:70px;
+}
+.button{
+position:absolute;
+top:62%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+.btn{
+border:1px solid #fff;
+padding:10px 30px;
+color:#fff;
+text-decoration:none;
+transition:0.6s ease;
+}
+.btn:hover{
+	background-color:#fff;  /*fff denotes all color white*/
+	color:#000;  /*000 denotes all color black*/
+}
+.sub-menu-1{
+	display:none;
+}
+.main ul li:hover .sub-menu-1{   /*space beteen .sub menu*/
+	display:block;
+	position:absolute;
+	background:rgb(56,56,56);
+	margin-top:1px;
+	margin-left:-2px;
+}
+.main ul li:hover .sub-menu-1 ul{
+	display:block;
+	margin:12px;
+}
+.main ul li:hover .sub-menu-1 ul li{
+	width:120px;
+	padding:10px;
+	border-bottom:1px dotted #fff;
+	background:transparent;
+	border-radius:0;
+	text-align:left;
+}
+.main ul li:hover .sub-menu-1 ul li:last-child{
+	border-bottom:none;
+}
+.fa-angle-right{
+	float:right;
+}
+.sub-menu-2{
+	display:none;
+}
+.hover-me:hover .sub-menu-2{
+	position:absolute;
+	display:block;
+	margin-top:-2px;
+	margin-left:120px;
+	background:rgba(56,56,56);
+}

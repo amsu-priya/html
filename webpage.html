@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details page</title>
+    <link rel="stylesheet" href="/css/details.css">
+
+</head>
+<body>
+    <h1 style="text-align: center;color: white;" >BOOK OUR SERVICE</h1>
+    <h3 style="text-align: center;color:white">Let us be the people who sketch the outline and fill in the colors for the beautiful picture of your
+         love story on your wedding day. Forget all the <br>hassle of getting things coordinated, we are here to
+          make you look flawless on your special day with our wedding photography services.</h3>
+          <br>
+       
+        <div class="container">
+            <form class="contact-form">
+                <label>NAME</label><br>
+                    <input type="text" name="txt_userName"  id="firstname"  placeholder="Enter Name"/><br><br>
+                    <label>EMAIL</label><br>
+                    <input type="email" name="txt_userEmail"  id="email"  placeholder="Enter email"/><br><br>
+                    <label>PHONE NUMBER</label><br>
+                    <input type="text"   id="phonenumber"  placeholder="Enter Phone Number" /><br><br>
+                    <label>CITY</label><br>
+                    <input type="text" name="txt_usercity" id="usercity"  placeholder="Enter city"/><br><br>
+                    <h2 style="color:white; text-transform: uppercase;">Event detials</h2>
+                    <label>TYPE OF EVENT</label><br>
+                    <input type="text" name="txt_eventtype"  id="type"  placeholder="Enter event type"/><br><br><br>
+                    <label>DATE</label><br>
+                    <input type="date" name="txt_eventdate"  id="ventdate"  placeholder="Enter date of the event"><br><br>
+                    <label>LOCATION</label><br>
+                    <input type="text" name="txt_eventlocation"  id="ventlocation"  placeholder="Enter event location"><br><br> 
+                    <label>VENUE</label><br>
+                    <input type="text" name="txt_eventvenue"  id="eventvenue"  placeholder="Enter venue"><br><br> 
+                    <label>TIMING</label><br>
+                    <input type="datetime" name="txt_eventtime"  id="eventtime"  placeholder="Enter timing of the event"><br><br> 
+                    <label>CROWD STRENGTH</label><br>
+                    <input type="text" name="txt_eventstrength"  id="eventstrength"  placeholder="Enter crowd strength"><br><br> 
+                    <button type="button" onclick="validateEmail()">BOOK US NOW</button>  
+
+    </form>
+</div>
+    <script>
+    function validateEmail()
+        {
+ 
+            var email=document.getElementById("email").value;
+            var firstname=document.getElementById("firstname");
+
+        if(firstname.value ==="")
+           {
+                window.alert("First Name is required");
+           }
+            if(email.indexOf("@")<0)
+              {
+                  window.alert("Please enter a valid email");
+              }
+            else
+             {
+                if(email.indexOf(".")<0)
+              {
+                  window.alert("Please enter a valid email");
+              }
+        
+             }
+           
+            if((phonenumber.value).length< 10)
+            {
+            window.alert("Phone number should contain 10 digits");
+            }
+            if(usercity.value ==="")
+           {
+                window.alert("City is required");
+           }
+           if(type.value ==="")
+           {
+                window.alert("Event Type is required");
+           }
+           if(ventdate.value ==="")
+           {
+                window.alert("Event Date is required");
+           }
+           if(ventlocation.value ==="")
+           {
+                window.alert("Event Location is required");
+           }
+           if(eventvenue.value ==="")
+           {
+                window.alert("Event Venue is required");
+           }
+           if(eventtime.value ==="")
+           {
+                window.alert("Event Time is required");
+           }
+           if(eventstrength.value ==="")
+           {
+                window.alert("Event Strength is required");
+           }
+        }
+
+     </script>
+  
+</body>
+</html>

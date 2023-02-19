@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="new 2.css">   <!--immedately after head,if placed after style won't work--refer new 2.css-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+header{
+background-color: blue;
+height: 120px;
+text-align:center;
+border: 25px solid violet;
+border-radius: 50px;
+}
+
+footer{
+background-color: #000077;
+text-color: white;
+font-size: 25px;
+height :50px;
+text-align: center;
+}
+
+a:visited{
+color:blue;
+}
+a:hover{
+color:red;
+}
+
+h3{
+  display: none;
+  background-color: yellow; 
+ }
+
+div:hover h3 {
+  display: block;
+  height: 50px;
+  width: 120px;
+}
+
+:target {
+  border: 2px solid #D4D4D4;
+  background-color: #e5eecc;
+}
+::selection {
+  color: red;
+  background: yellow;  /* changes color to red when text is dragged */
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1>CSS-Cascading Style Sheets</h1>
+</header>
+
+<h2 center>syntax is {property:value;}</h2>
+
+<div>hover me for 1st topic
+<h3>selectors</h3>
+</div>
+<a href="#tada">move to end of the topic</a>
+<ul><hr>
+<li>combinational selectors</li>
+<h1>div > p</h1>	Selects all p elements where the parent is a div element
+<h1>div + p</h1>	Selects all p elements that are placed immediately after div elements
+<h1>p ~ ul</h1>   	Selects every ul element that are preceded by a p element<hr>
+<li>pseudo-class</li>
+<h1><a href="https://www.w3schools.com">Click on the link</a></h1>
+<h1>p::after</h1>	        Insert content after every p elements
+<h1>p::before</h1>	        Insert content before every p element
+<h1>p::first-letter</h1>	Selects the first letter of every p element
+<h1>p::first-line</h1>	    Selects the first line of every p element
+<h1>p::selection</h1>	    Selects the portion of an element that is selected by a user<hr>
+<li>pseudo elements are of double colon:</li>
+<h1>p::after</h1>	     Insert something after the content of each <p> element
+<h1>p::before</h1>       Insert something before the content of each <p> element
+<h1>p::first-letter	</h1>Selects the first letter of each <p> element
+<h1>p::first-line	</h1>Selects the first line of each <p> element
+<h1>p::selection	</h1>Selects the portion of an element that is selected by a user<hr>
+<li>pseudo classes are of single dots</li>
+<h1>refer website</h1><hr>
+<li>attribute selectors</li>
+<h1>[target]</h1>	            Selects all elements with a target attribute
+<h1>[target=_blank]</h1>	        Selects all elements with target="_blank"
+<h1>[title~=flower]</h1>	        Selects all elements with a title attribute containing the word "flower"
+<h1>a[href^="https"]</h1>    	Selects every a element whose href attribute value begins with "https"
+<h1>a[href$=".pdf"]</h1>     	Selects every a element whose href attribute value ends with ".pdf"
+<h1>a[href*="w3schools"]</h1>	Selects every a element whose href attribute value contains the substring "w3schools"<hr>
+<h1>*</h1> It s the universal selector which suits for all elements<hr>
+
+</ul>
+
+<p  id ="tada">end of the topic</p> 
+
+<div>hover me for 2st topic
+<h3>styles/elements in css</h3>
+</div>
+
+<ul>
+<li>inline elements</li>
+<p>stay as primary method where style is initalized within the tag</p>
+<li>external styles</li>
+<p>where style is initalized in other file with .css</p>
+<li>internal elements</li>
+<p>where style is initalized in style tag</p>
+</ul>
+
+<footer>
+<h5> &copy; CSS ends here</h5> 
+</footer>
+</body>
+</html>
